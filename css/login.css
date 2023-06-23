@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(0, 0, 0);
+}
+
+.login-form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login_header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.login_header img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.login_header h1{
+    color: rgb(233, 198, 0);
+    font-size: 1.8em;
+}
+
+.login_input{
+    border: 2px solid #333;
+    border-radius: 9px;
+    color: #333;
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+}
+
+.login_button{
+    background-color: rgb(233, 198, 0);
+    border-radius: 9px;
+    color: white;
+    text-shadow: 2px 2px 1px #3333339a;
+    max-width: 330px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px;
+    transition: 0.2s all;
+}
+
+.login_button:hover{
+    transform: scale(1.05);
+}
+
+.login_button:disabled{
+    background-color: #929292f3;
+    color: #414141;
+    text-shadow: none;
+    cursor: auto;
+    transform: none;
+}

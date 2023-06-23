@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-image: url(../images/fundo01.png);
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px ;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 200);
+    font-size: 1.1em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.carta{
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    background-color: #c5c5c5;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.300);
+}
+
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 2.5px solid #333;
+    transition: all 0.5s ease;
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.back{
+    background-image: url(../images/carta01.jpg);
+    backface-visibility: hidden;
+}
+
+
+.revela-carta{
+    transform: rotateY(180deg)
+}
+
+.carta-acertada{
+    opacity: 0.4;
+}
+
